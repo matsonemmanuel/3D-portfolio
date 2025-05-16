@@ -275,14 +275,15 @@ header {
   flex: 1;
   min-width: 280px;
   margin: 20px;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, #e8fdf5, #d9f2ff); /* Soft gradient background */
+  color: rgb(11, 196, 168);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 .contact-card h3 {
-  color: #FFD700;
+  color: #131001;
   margin-bottom: 15px;
 }
 
@@ -296,8 +297,8 @@ header {
 
 
 footer {
-  background: #0c0808;
-  color: white;
+  background: linear-gradient(135deg, #e8fdf5, #d9f2ff); /* Soft gradient background */
+  color: rgb(11, 196, 168);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
