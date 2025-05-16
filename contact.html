@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Next Generation - TNG</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-4 py-4">
+      <div class="flex items-center space-x-4">
+        <a href="tng.html">
+          <img src="Logo (1).jpg" alt="Logo" class="h-12 w-12 object-cover rounded-full" />
+        </a>
+        <span class="text-lg font-bold text-green-700">The Next Generation (TNG)</span>
+      </div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="tng.html" class="hover:text-green-600">Home</a></li>
+        <li class="relative group">
+  <a href="#" class="hover:text-green-600">About</a>
+  <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-200 ease-in-out invisible group-hover:visible z-50">
+    <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a></li>
+    <li><a href="#who-we-are" class="block px-4 py-2 hover:bg-gray-100">Who We Are</a></li>
+    <li><a href="#what-we-do" class="block px-4 py-2 hover:bg-gray-100">What We Do</a></li>
+    <li><a href="team.html" class="block px-4 py-2 hover:bg-gray-100">Our Team</a></li>
+  </ul>
+</li>
+
+        <li><a href="#services" class="hover:text-green-600">Services</a></li>
+        <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+      </ul>
+      <div class="md:hidden text-3xl cursor-pointer" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="relative h-[60vh] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center animate-fade" style="background-image: url('TNG12.jpg');"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl font-bold mb-2">GET IN TOUCH</h1>
+      <p class="text-lg">Reach Out to Us through the following Channels</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-br from-[#e8fdf5] to-[#d9f2ff] py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-green-700 mb-4">Contact Us</h2>
+        <p class="text-lg text-gray-600">We'd love to hear from you. Reach out anytime.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-map-marker-alt text-green-600 text-2xl"></i>
+            <div>
+              <h4 class="text-lg font-semibold">Our Location</h4>
+              <p>Kyangwali Refugee Settlement, Kikuube District, Uganda</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-envelope text-green-600 text-2xl"></i>
+            <div>
+              <h4 class="text-lg font-semibold">Email</h4>
+              <p><a href="mailto:info@tng.org" class="text-blue-600 hover:underline">info@tng.org</a></p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-phone-alt text-green-600 text-2xl"></i>
+            <div>
+              <h4 class="text-lg font-semibold">Phone</h4>
+              <p>+256 777 268 968 <br> +254 115 867 553</p>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="mt-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.792693030375!2d30.962944874995657!3d1.3584406616542614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17637787ff07aeb3%3A0x2d1b5a99e1adf72f!2sKyangwali%20Refugee%20Settlement!5e0!3m2!1sen!2sug!4v1715865700000!5m2!1sen!2sug"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-xl shadow-lg"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-white p-8 shadow-xl rounded-lg">
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+              <input type="text" name="name" id="name" required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+              <input type="email" name="email" id="email" required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+              <textarea name="message" id="message" rows="4" required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"></textarea>
+            </div>
+            <div>
+              <button type="submit"
+                class="w-full bg-green-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-card">
+        <h3>UGANDA</h3>
+        <p><strong>Our Address:</strong> Kikuube,<br>
+        Kyangwali, Namakakale.</p>
+        <p><strong>Email:</strong> <a href="thenextgen.org">thenextgeneration.org</a></p>
+        <p><strong>Call at:</strong> ‪+256393240900‬</p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>DRC</h3>
+        <p><strong>Our Address:</strong> No. 10 Tulipiers Street, Les Volcans Neighborhood,<br>
+        Bunia.</p>
+        <p><strong>Email:</strong> <a href="thenextgeneration.org">thenextgeneration.org</a></p>
+        <p><strong>Call at:</strong> ‪+243994252254‬</p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>KENYA</h3>
+        <p><strong>Our mailing Address:</strong> 5602 Tinkerbell ln apt 2411 Fort Worth, Tx 76119</p>
+        <p><strong>Email:</strong> <a href="thenextgen.org">thenextgen.org</a></p>
+        <p><strong>Call at:</strong> ‪+1 (276) 650-9001‬</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 The Next Generation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

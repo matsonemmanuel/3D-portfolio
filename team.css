@@ -74,7 +74,9 @@ header {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background: #011013;
+  min-width: 220px; 
+  background: black;
+  border-radius: 10px;
   top: 100%;
   left: 0;
   padding: 0.5rem 0;
